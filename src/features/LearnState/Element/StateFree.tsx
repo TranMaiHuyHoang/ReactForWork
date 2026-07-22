@@ -10,9 +10,18 @@ interface IUser {
     };
 }
 const StateFree = () => {
+    // const [state, setState] = useState(0); // useState(0); init = 0 cap nhat san pham
+    // // theem san pham -> co gia tri -> can cap nhat
+    // const [formData, setFormData] = useState({
+    //     name: "", // Iphone7
+    //     price: 0, // 1000000
+    //     description: "", // Moo tar ip7
+    //     // raast nhieu
+    // });
+
     const [listUsers, setListUsers] = useState<IUser[]>([]);
 
-    console.log("listUsers api", listUsers);
+    // console.log("listUsers api", listUsers);
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
@@ -24,6 +33,7 @@ const StateFree = () => {
 
         fetchData();
     }, []);
+    
     return (
         <div>
             StateFree

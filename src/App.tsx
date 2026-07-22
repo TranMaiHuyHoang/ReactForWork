@@ -1,4 +1,4 @@
-import InputText from "./components/common/InputText/Indenx";
+
 import State from "./features/LearnState";
 
 function App() {
