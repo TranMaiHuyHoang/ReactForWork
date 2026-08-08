@@ -10,6 +10,7 @@ const Switch = ({
         <label className="inline-flex cursor-pointer items-center">
             <input
                 className={`peer sr-only ${className}`}
+                type="checkbox"
                 checked={checked}
                 disabled={disabled}
                 {...props}

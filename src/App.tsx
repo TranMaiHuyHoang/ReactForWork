@@ -1,11 +1,13 @@
 
 import State from "./features/LearnState";
+import Todo from "./features/Todo";
 
 function App() {
     return (
         <div>
             {/* <InputText/> */}
-            <State />
+            {/* <State /> */}
+            <Todo/>
         </div>
     );
 }
